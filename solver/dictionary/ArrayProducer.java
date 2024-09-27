@@ -33,7 +33,7 @@ public class ArrayProducer {
         } catch (IOException e) {
             e.printStackTrace(System.err);
         }
-        dictionary = stringList.toArray(new String[0]);
+        dictionary = stringList.toArray(String[]::new);
         
     }
 
